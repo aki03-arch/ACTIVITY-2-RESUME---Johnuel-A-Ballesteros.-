@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .resume-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 1px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+            padding: 2rem 4rem;
+        }
+        
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            flex-grow: 1;
+        }
+        
+        .name {
+            font-weight: 800;
+            font-size: 2.25rem;
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            font-size: 1.6em;
+            margin-bottom: 20px;
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+        
+        .list-container {
+            margin-bottom: 2rem;
+            list-style-type: disc;
+            padding-left: 1.25rem;
+            
+        }
+
+        .list-container li {
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+
+        @media (min-width: 768px) {
+            .header {
+                flex-direction: row;
+                align-items: center;
+                gap: 3rem;
+            }
+            .profile-pic {
+                margin-bottom: 0;
+            }
+            .name {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <div class="header">
+            <img src="photos/asd.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="contact-info">
+                <h1 class="name">Johnuel A. Ballesteros</h1>
+                <div class="contact-details">
+                    <p>Address: 481 J.p Rizal St. Caloocan City</p>
+                    <p>Contact Number: 09155978915</p>  
+                    <p>Email: ballesterosjohnuel1@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Objective Section -->
+        <h2 class="section-title">Objective</h2>
+        <p>Looking for an IT position where I can use my skills, expand my knowledge in new technologies, and contribute to the success of the company.</p>
+        <!-- Skills Section -->
+        <h2 class="section-title">Skills</h2>
+        <ul class="list-container">
+            <li>Programming (HTML, CSS,)</li>
+            <li>Networking and Troubleshooting</li>
+        </ul>
+
+        <!-- Additional Information Section -->
+        <h2 class="section-title">Additional Information</h2>
+        <p><strong>Birthday:</strong> May 26, 2004</p>
+        <p><strong>Religion:</strong> Catholic</p>
+        <p><strong>Age:</strong> 21</p>
+        <p><strong>Height:</strong> 5.7+</p>
+        <p><strong>Weight:</strong> 55 kg</p>
+        <p><strong>Nickname:</strong> John John</p>
+        <p><strong>Nationality:</strong> Filipino</p>
+         <!-- Eductional Section -->
+        <h2 class="section-title">Educational Background</h2>
+        <p><strong>2nd year College - Global Reciprocal College (2025-2026)</p></strong>
+
+        <!-- Work Experience Section -->
+        <h2 class="section-title">Work Experience</h2>
+        <p><strong>Factory Worker (2-3 months)</p></strong>
+
+        <!-- Character References Section -->
+        <h2 class="section-title">Character References</h2>
+        <ul class="list-container">
+            <li>Albert Teves</li>
+            <li>Raeven Lagman</li>
+        </ul>
+    </div>
+</body>
+</html>
