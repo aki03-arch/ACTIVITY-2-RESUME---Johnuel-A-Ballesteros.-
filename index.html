@@ -26,16 +26,16 @@
             padding: 2rem 4rem;
         }
         
-        /* FIX 1: Ensure the header container is clearly defined */
+       
         .header {
             display: flex;
-            flex-direction: column; /* Stack vertically by default (mobile first) */
+            flex-direction: column; 
             align-items: center; 
             margin-bottom: 30px;
-            padding-bottom: 10px; /* Added padding for separation */
+            padding-bottom: 10px;
         }
 
-        /* FIX 2: Target the actual image element for size and shape */
+      
         .profile-pic {
             width: 150px; 
             height: 150px;
@@ -47,21 +47,21 @@
         
         .contact-info {
             flex-grow: 1;
-            /* FIX 3: Center text on small screens and ensure proper flow */
+            
             text-align: center; 
-            width: 100%; /* Take up full width when stacked */
+            width: 100%; 
         }
 
-        /* FIX 4: Apply strong, distinct styles to the name to prevent overlap */
+        
         .name {
             font-weight: 800;
             font-size: 2.25rem;
             color: #1f2937;
             margin-bottom: 0.25rem;
-            margin-top: 0.5rem; /* Ensure space after image when stacked */
+            margin-top: 0.5rem; 
         }
         
-        /* Added styling for contact details to control margin */
+        
         .contact-details p {
             margin: 0.25rem 0;
             color: #4a5568;
@@ -72,7 +72,7 @@
         .section-title {
             font-weight: 700;
             font-size: 1.6em;
-            margin-top: 25px; /* Increased margin-top for better separation */
+            margin-top: 25px; 
             margin-bottom: 15px;
             color: #1f2937;
             border-bottom: 2px solid #e5e7eb;
@@ -91,16 +91,15 @@
             color: #1f2937;
         }
 
-        /* Media query for larger screens (side-by-side layout) */
-        @media (min-width: 768px) {
+      
             .header {
-                flex-direction: row; /* Layout side-by-side */
-                align-items: flex-start; /* Align to the top of the header area */
-                gap: 2.5rem; /* Space between picture and text */
+                flex-direction: row; 
+                align-items: flex-start; 
+                gap: 2.5rem; 
             }
             .contact-info {
-                text-align: left; /* Align text to left on large screens */
-                padding-top: 10px; /* Small push down to align better with picture */
+                text-align: left;
+                padding-top: 10px;
             }
             .profile-pic {
                 margin-bottom: 0;
@@ -157,3 +156,4 @@
     </div>
 </body>
 </html>
+
